@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 export const metadata = {
   title: "Home",
@@ -5,15 +6,15 @@ export const metadata = {
   Image: "./favicon.ico",
 };
 
-
 const Home = () => {
   return (
-    <div className="text-normal flex justify-center pt-10">
-      <h1>
-        HI !
-      </h1>
+    <div >
+      <h1 className="text-normal flex justify-center pt-10">HI !</h1>
+      <button>
+        <Link href="/login">Login</Link>
+      </button>
     </div>
   );
-}
+};
 
 export default Home;
